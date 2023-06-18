@@ -59,3 +59,15 @@ def revoke_key(api_key):
     except:
         print('No such api key found')
         return False
+    
+def count_update(username, count):
+    cur.execute(f"select COUNT from TOKEN_COUNT where USER_NAME='{username}'")
+    out = cur.fetchone()
+    if out:
+        old_count = out[0]
+        new_count = count+old_count
+        cur.execute(f"UPDATE TOKEN_COUNT SET COUNT={new_count} where USER_NAME='{username}'")
+        conn.commit()
+    else:
+        cur.execute(f"INSERT INTO TOKEN_COUNT VALUES ('{username}', '{count}')")
+        conn.commit()
