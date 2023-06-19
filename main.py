@@ -8,6 +8,6 @@ app = FastAPI()
 client = Client("http://127.0.0.1:8080")
 
 @app.get("/generate")
-async def info(query: str,  max_token: int = 50, username: APIKey = Depends(auth.get_username)):
+async def generate_token(query: str,  max_token: int = 50, username: APIKey = Depends(auth.get_username)):
     output = client.generate(query, max_new_tokens=max_token).generated_text
     return output
