@@ -18,3 +18,14 @@ First, You need to create a Google VM instance with A100 GPU(or any GPU with hig
 
 ### Step 4: Select Ubuntu Operating System and Version above 20.04
 <p align="center"><img alt="GCP Instruction" src="imgs/Screenshot from 2023-06-21 23-13-22.png"/></p>
+
+### Step 5: Click the Create Button
+<p align="center"><img alt="GCP Instruction" src="imgs/Screenshot from 2023-06-21 23-26-41.png"/></p>
+
+## GPU Driver and CUDA Installation
+
+Run the below cmd
+```bash
+curl https://raw.githubusercontent.com/GoogleCloudPlatform/compute-gpu-installation/main/linux/install_gpu_driver.py --output install_gpu_driver.py
+sudo python3 install_gpu_driver.py
+```
