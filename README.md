@@ -13,3 +13,8 @@ First, You need to create a Google VM instance with A100 GPU(or any GPU with hig
 ### Step 2: Name your Instance(openllm) and Choose the GPU type and Count
 <p align="center"><img alt="GCP Instruction" src="imgs/Screenshot from 2023-06-21 23-12-07.png"/></p>
 
+### Step 3: Click the Switch Image
+<p align="center"><img alt="GCP Instruction" src="imgs/Screenshot from 2023-06-21 23-12-34.png"/></p>
+
+### Step 4: Select Ubuntu Operating System and Version above 20.04
+<p align="center"><img alt="GCP Instruction" src="imgs/Screenshot from 2023-06-21 23-13-22.png"/></p>
