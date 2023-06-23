@@ -29,3 +29,10 @@ Run the below cmd
 curl https://raw.githubusercontent.com/GoogleCloudPlatform/compute-gpu-installation/main/linux/install_gpu_driver.py --output install_gpu_driver.py
 sudo python3 install_gpu_driver.py
 ```
+
+## HuggingFace Text Generation Inference
+
+```bash
+# Run the text generation inference docker container
+docker run --gpus all -p 8080:80 -v $PWD/data:/data ghcr.io/huggingface/text-generation-inference:0.8 --model-id tiiuae/falcon-7b-instruct
+```
