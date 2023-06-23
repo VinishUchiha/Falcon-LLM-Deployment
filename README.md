@@ -43,3 +43,9 @@ docker run --gpus all -p 8080:80 -v $PWD/data:/data ghcr.io/huggingface/text-gen
 git clone https://github.com/VinishUchiha/Falcon-LLM-Deployment.git
 cd Falcon-LLM-Deployment
 ```
+
+## Run the FastAPI
+
+```bash
+uvicorn main:app
+```
