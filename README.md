@@ -36,3 +36,10 @@ sudo python3 install_gpu_driver.py
 # Run the text generation inference docker container
 docker run --gpus all -p 8080:80 -v $PWD/data:/data ghcr.io/huggingface/text-generation-inference:0.8 --model-id tiiuae/falcon-7b-instruct
 ```
+
+## Clone the Repo
+
+```bash
+git clone https://github.com/VinishUchiha/Falcon-LLM-Deployment.git
+cd Falcon-LLM-Deployment
+```
